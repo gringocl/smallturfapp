@@ -1,0 +1,13 @@
+
+  <%= simple_form_for @product, html: {class: 'custom'} do |f| %>
+    <%= render 'errors' %>
+    
+    <%= f.input :code %><br>
+    <%= f.input :manufacturer_id, collection: Manufacturer.list, include_blank: false, prompt: 'Please select company' %><br>
+    <%= f.input :name %><br>
+    <%= f.input :price %><br>
+
+
+    <%= f.button :submit, class: 'radius success' %>
+  <% end %>
+
