@@ -68,7 +68,7 @@ $default-float: left;
 // Colors
 
 $primary-color: #5da423;
-// $secondary-color: #e9e9e9;
+$secondary-color: #e9e9e9;
 // $alert-color: #c60f13;
 // $success-color: #5da423;
 
@@ -866,7 +866,7 @@ $primary-color: #5da423;
 
 // We use these for currently selected anchor links
 
-// $pagination-link-current-background: $primary-color;
+$pagination-link-current-background: darken($secondary-color, 50%);
 // $pagination-link-current-font-color: #fff;
 // $pagination-link-current-font-weight: bold;
 // $pagination-link-current-cursor: default;

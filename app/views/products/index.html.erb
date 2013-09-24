@@ -1,6 +1,6 @@
 
-    <h1>Listing products | <%= link_to 'Github Repo',  %></h1></li>
-
+    <h1>Listing products | <%= link_to 'Github Repo', 'https://github.com/gringocl/smallturfapp' %></h1></li>
+<br><%= paginate @products %>
       <table>
         <thead>
           <tr>
@@ -28,6 +28,8 @@
           <% end %>
         </tbody>
       </table>
+
+      <br><%= paginate @products %>
 
       <br>
 <%= link_to 'New Product', new_product_path, class: "button medium radius" %>
